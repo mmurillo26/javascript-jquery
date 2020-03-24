@@ -1,0 +1,16 @@
+body{
+  background: url("img/cielo.jpg");
+  margin: 0;
+}
+
+#logo{
+  background: darkblue;
+}
+
+#menu li:hover{
+  background: darkblue;
+}
+
+.showMore{
+  background: darkblue;
+}

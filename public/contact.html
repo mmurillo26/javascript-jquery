@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Project</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link id="theme" rel="stylesheet" href="CSS/green.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <script src="JS/app.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $.validate();
+      });
+    </script>
+  </head>
+  <body>
+    <section id="global">
+      <header>
+        <div id="logo">
+          <h1>JavaScript Project</h1>
+        </div>
+        <nav id="menu">
+          <ul>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="clock.html">Clock</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="slider">
+        <div class="bxslider">
+          <img src="CSS/img/cielo.jpg" title"Cielo">
+          <img src="CSS/img/hojas.jpg" title"Hojas">
+          <img src="CSS/img/rojo.jpg" title"Rojo">
+        </div>
+      </div>
+
+      <section id="content">
+          <form id="contact" method="post">
+            Full Name:<input data-validation="alphanumeric">
+            Birth Date:<input data-validation="birth-date" data-validation-help="yyyy-mm-dd">
+            Email:<input data-validation="email">
+            Phone:<input data-validation="number">
+            Message:<input id="form-message" data-validation="required">
+            <input id="submit" type="submit" value="Send">
+          </form>
+        <aside class="sideBar">
+          <div><h4>About me</h4></div>
+          <img src="CSS/img/caracol.jpg" class="img">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p id="userLoged"></p>
+          <form class="form" action="index.html" method="post">
+            <div><h4>Login</h4></div>
+            <label for="Username">Username:</label>
+            <input type="text" name="Username" id="form_name">
+            <label for="Email">Email:</label>
+            <input type="email" name="Email">
+            <label for="Password">Password:</label>
+            <input type="password" name="Password">
+            <button type="submit" name="login">Login</button>
+          </form>
+        </aside>
+      </section>
+    </section>
+    <div id="theme-selector">
+      <div id="to-green"></div>
+      <div id="to-blue"></div>
+      <div id="to-red"></div>
+    </div>
+    <footer class="footer">
+      JavaScript Project - Mario Murillo copyrigth &copy 2020
+      <button id="gotoTop" type="button" name="button">Go to PageTop</button>
+    </footer>
+  </body>
+</html>

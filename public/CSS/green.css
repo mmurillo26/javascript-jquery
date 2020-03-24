@@ -1,0 +1,16 @@
+body{
+  background: url("img/hojas.jpg");
+  margin: 0;
+}
+
+#logo{
+  background: darkgreen;
+}
+
+#menu li:hover{
+  background: darkgreen;
+}
+
+.showMore{
+  background: darkgreen;
+}
